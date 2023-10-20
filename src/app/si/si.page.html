@@ -1,0 +1,32 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title [routerLink]="['/home']">DUOC UC</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">DUOC UC</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <div id="container" >
+    <ion-card-title>TeLlevoApp</ion-card-title>
+    <br/>
+    <br/>
+    <ion-list>
+    <h2 id="texto">Indique la cantidad de estudiantes en el vehiculo</h2>
+    <br/>
+    <ion-input  label="ingrese numeros" type="number"
+label-placement="floating" fill="outline" ></ion-input>
+    <br />
+    <h2 id="texto">Ingrese el costo por persona</h2>
+    <br/>
+    <ion-input label="Ingrese monto" type="number"
+label-placement="floating" fill="outline" ></ion-input>
+  </ion-list>
+  </div>
+</ion-content>

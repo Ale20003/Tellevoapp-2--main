@@ -1,0 +1,28 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>DUOC UC</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Recuperar contraseña</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <div id="container">
+
+    <ion-list id="formulario">
+      <ion-label id="sub">Datos</ion-label><br>
+      <ion-input [(ngModel)]="informacion.nombre" type="text"
+expand="full" label="Nombre" placeholder="Ingrese Nombre de usuario"
+        slot="start"></ion-input>
+      <ion-button id="present-alert">
+        Recuperar
+      </ion-button>
+    </ion-list>
+  </div>
+</ion-content>

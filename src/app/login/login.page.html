@@ -1,0 +1,31 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title [routerLink]="['/home']">DUOC UC</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div id="container">
+    <ion-avatar id="avatar" #avatar>
+      <img
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGpxDmsfdMrUBmOGfPaDdXFHyRjSEpPCk-YKQwnZYNiiTSuZ3nbdJlbIfKq-xs8c7Q27E&usqp=CAU" />
+    </ion-avatar>
+    
+    <ion-card-content>
+      <h1>
+        !Bienvenido a TellevoAPP!
+      </h1>
+      <ion-label>Usuario: {{user.usuario}}</ion-label><br>
+      <h1>¿Tienes automóvil?</h1><br>
+      <ion-button shape="round" [routerLink]="['/si']">Si</ion-button><br>
+      <ion-button shape="round" [routerLink]="['/no']">No</ion-button><br>
+    </ion-card-content>
+    <ion-button (click)="playAvatar()" size="small" shape="round">
+      Animar
+    </ion-button>
+  </div>
+
+</ion-content>
